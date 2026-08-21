@@ -81,7 +81,7 @@ def extract_palette(frames):
 
     return rgb_to_hex(*primary), rgb_to_hex(*secondary)
 
-def build_kitty_raw(frames, durations, cols=28, rows=14, img_id=999):
+def build_kitty_raw(frames, durations, cols=22, rows=11, img_id=999):
     w, h = frames[0].size
     parts = []
 
@@ -118,7 +118,7 @@ def process_pokemon(idx_poke, target_dir):
         durations = [f.info.get("duration", 100) for f in ImageSequence.Iterator(img)]
 
         p_col, s_col = extract_palette(frames)
-        raw_content = build_kitty_raw(frames, durations)
+        raw_content = build_kitty_raw(frames, durations, cols=22, rows=11)
 
         filename = f"{poke_id:03d}_{name}_{p_col}_{s_col}.raw"
         file_path = os.path.join(target_dir, filename)

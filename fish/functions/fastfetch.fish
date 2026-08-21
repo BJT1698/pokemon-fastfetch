@@ -28,8 +28,8 @@ function fastfetch --description "Fastfetch with random Gen 2 (Crystal) animated
                 --color-keys "$p_col" \
                 --color-title "$p_col" \
                 --color-separator "$s_col" \
-                --logo-width 28 \
-                --logo-height 14 \
+                --logo-width 22 \
+                --logo-height 11 \
                 --logo-padding-right 3 \
                 $argv
             return
