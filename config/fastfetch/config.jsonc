@@ -1,0 +1,64 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "raw",
+        "width": 28,
+        "height": 14,
+        "padding": {
+            "top": 1,
+            "right": 3
+        }
+    },
+    "display": {
+        "separator": " 󰄾 "
+    },
+    "modules": [
+        {
+            "type": "title",
+            "format": "{user-name}@{host-name}"
+        },
+        {
+            "type": "separator",
+            "string": "─────────────"
+        },
+        {
+            "type": "command",
+            "key": "󰐼 Pokémon",
+            "text": "echo -n \"$POKEMON_NAME\""
+        },
+        {
+            "type": "os",
+            "key": "󰣇 OS"
+        },
+        {
+            "type": "kernel",
+            "key": "󰌽 Kernel",
+            "format": "{release}"
+        },
+        {
+            "type": "uptime",
+            "key": "󰅐 Uptime"
+        },
+        {
+            "type": "wm",
+            "key": "󱂬 WM"
+        },
+        {
+            "type": "shell",
+            "key": "󰞉 Shell"
+        },
+        {
+            "type": "terminal",
+            "key": "󰞕 Terminal"
+        },
+        {
+            "type": "memory",
+            "key": "󰍛 Memory"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}
